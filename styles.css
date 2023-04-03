@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.container h1{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    color: aquamarine;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width:32%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    object-fit: cover;
+    box-shadow: 0 0 10px #333;
+}
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+    transition: 1.03;
+}
+.card img:hover{
+
+filter: grayscale(0%);
+}
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(234, 236, 236, 0.947);
+    opacity: 0;
+    transition: 1;
+}
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
+#wrapper{
+    background-color: rgb(9, 0, 0);
+}
